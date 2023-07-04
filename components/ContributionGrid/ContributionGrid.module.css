@@ -24,13 +24,15 @@
     color: white;
     padding: 5px;
     border-radius: 3px;
-    top: 50%;
+    top: -180%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     z-index: 99;
-    transition: opacity 0.3s;
-    opacity: 0;
+}
+
+.cell .tooltip {
+    display: block;
 }
 
 .tooltip::after {
@@ -44,7 +46,6 @@
     border-color: black transparent transparent transparent;
 }
 
-.cell:hover .tooltip {
-    display: block;
-    opacity: 1;
+.date {
+    color: #7C7C7C;
 }

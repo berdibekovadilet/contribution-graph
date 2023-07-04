@@ -1,3 +1,11 @@
+# Contribution Graph App
+
+# Live: https://contribution-graph-eta.vercel.app/
+
+![Screen Banner](cover/1.png)
+![Screen Banner](cover/2.png)
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
