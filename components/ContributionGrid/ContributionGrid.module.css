@@ -16,7 +16,7 @@
 }
 
 .tooltip {
-    width: 145px;
+    width: 200px;
     cursor: pointer;
     display: none;
     position: absolute;
@@ -48,4 +48,6 @@
 
 .date {
     color: #7C7C7C;
+    font-size: 12px;
+    margin: 4px 0;
 }

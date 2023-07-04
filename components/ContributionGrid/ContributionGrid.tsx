@@ -1,4 +1,6 @@
 import {FC, useState} from 'react';
+import {format, parseISO} from 'date-fns';
+import {ru} from 'date-fns/locale';
 import styles from './ContributionGrid.module.css'
 
 type ContributionGridProps = {
@@ -37,7 +39,9 @@ export const ContributionGrid: FC<ContributionGridProps> = ({data}) => {
                         <div>
                             {count} контрибуций
                         </div>
-                        <div className={styles.date}>{date}</div>
+                        <div className={styles.date}>
+                            {format(parseISO(date), 'EEEE, MMMM d, yyyy', {locale: ru})}
+                        </div>
                     </div>}
                 </div>
             ))}
