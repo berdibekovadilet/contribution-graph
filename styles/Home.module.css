@@ -7,6 +7,15 @@
     padding: 8rem 2rem;
 }
 
+.gridContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: auto;
+    padding: 20px;
+}
+
+
 .title {
     text-align: center;
     margin-bottom: 2rem;

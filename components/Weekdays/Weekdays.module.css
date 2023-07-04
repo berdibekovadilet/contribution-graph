@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-right: 15px;
+    margin-top: 25px;
+    gap: 18px;
+}
+
+.day {
+    font-size: 10px;
+}

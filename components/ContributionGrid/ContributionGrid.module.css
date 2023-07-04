@@ -27,9 +27,24 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
     z-index: 99;
+    transition: opacity 0.3s;
+    opacity: 0;
+}
+
+.tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
 }
 
 .cell:hover .tooltip {
     display: block;
+    opacity: 1;
 }

@@ -2,7 +2,7 @@ import {useEffect, useState} from "react";
 import {getContributions} from "../lib/api";
 import type {NextPage} from 'next'
 import Head from 'next/head'
-import {ContributionGrid} from "../components/ContributionGrid"
+import {ContributionGrid, Info, Months, Weekdays} from "../components"
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
@@ -41,7 +41,17 @@ const Home: NextPage = () => {
                 <link rel="icon" href="/favicon.png"/>
             </Head>
             <h1 className={styles.title}>Contribution Graph App</h1>
-            <ContributionGrid data={data}/>
+            <>
+                <div className={styles.gridContainer}>
+                    <Weekdays/>
+                    <div>
+                        <Months/>
+                        <ContributionGrid data={data}/>
+                    </div>
+                </div>
+                <Info/>
+            </>
+
         </div>
     )
 }
