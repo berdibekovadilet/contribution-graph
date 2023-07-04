@@ -1,3 +1,13 @@
 .container {
-  padding: 0 2rem;
+    width: 100%;
+    max-width: 1000px;
+    height: 100vh;
+    overflow: auto;
+    margin: 0 auto;
+    padding: 8rem 2rem;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 2rem;
 }
